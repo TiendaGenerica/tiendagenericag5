@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Crear Usuario</title>
+<link rel="stylesheet" href="estilo_crearusuario.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class = "container_users">
+		<div class="title">Crear Usuario</div>
+			<form action="crearusuario.jsp" method="post">
+				<div class= "detalles_Usuario">
+	
+				<div class="input-box">
+					<span class ="details">Cedula:</span>
+					<input type="number" name="cedula">
+				</div>
+				<div class="input-box">
+					<span class ="details">Nombre:</span>
+					<input type="text" name="nombre">
+				</div>
+				<div class="input-box">
+					<span class ="details">Email:</span>
+					<input type="text" name="email">
+				</div>
+				<div class="input-box">
+					<span class ="details">Usuario:</span>
+					<input type="text" name="usuario">
+				</div>
+				<div class="input-box">
+					<span class ="details">Contraseña:</span>
+					<input type="text" name="contraseña">
+				</div>
+				<div>
+					<button class="crear" type="submit">crear</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

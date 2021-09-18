@@ -1,6 +1,8 @@
+<%@page import="tienda_generica_g5.mensaje"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import ="java.sql.*" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +10,7 @@
 <title>Login</title>
 </head>
 <body>
-	<% 
+<% 
 	String usuario = request.getParameter("usuario"); 
 	String contraseña = request.getParameter("contraseña");
 	Class.forName("com.mysql.jdbc.Driver");
@@ -22,12 +24,11 @@
 		i++;
 	}
 	if (i == 1){
-		out.println("Usuario autorizado");
-		response.sendRedirect("principal.jsp");
+		response.sendRedirect("menuprincipal.html");
 	}else{
-		out.println("Usuario o contraseña incorrecta");
-		response.sendRedirect("index.html");
+		response.sendRedirect("mensaje.html");
 	}
 	%>
+
 </body>
 </html>
